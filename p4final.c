@@ -49,10 +49,10 @@ void out_put(int n,float a[n],float x,float result)
 
 int main()
 {
-  int deg,x,result;
-  deg=input_degree();
+  int degr,x,result;
+  degr=input_degree();
   x=input_x();
-  float a[deg];
+  float a[degr];
   input_coefficients(deg,a);
   result=evaluate_polynomial(deg,a,x);
   out_put(deg,a,x,result);

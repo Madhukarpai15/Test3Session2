@@ -20,19 +20,19 @@ void input_array(int n,int a[n])
 
 int find_largest(int n,int a[n])
 {
-  int large;
+  int largest;
   for(int i=0;i<n-1;i++)
     {
       if(a[i+1]>a[i])
       {
-        large=i+1;
+        largest=i+1;
       }
       else
       {
-        large=i;
+        largest=i;
         while(i<n-1)
           {
-            if(a[large]>=a[i+2])
+            if(a[largest]>=a[i+2])
             {
               i++;
               continue;
@@ -45,7 +45,7 @@ int find_largest(int n,int a[n])
         
       }
     }
-  return large;
+  return largest;
 }
 
 void out_put(int n,int a[n],int largest)
